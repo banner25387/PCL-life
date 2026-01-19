@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "PCL_108",
+    pageTitle: "PCL_note",
     pageTitleSuffix: "",
     enableSPA: false,
     enablePopovers: true,
@@ -16,7 +16,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "banner25387.github.io/PCL-10583108",
+    baseUrl: "banner25387.github.io/PCL-life",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
