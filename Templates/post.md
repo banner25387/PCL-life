@@ -2,12 +2,6 @@
 title: "{ title }"
 date: "{{date:YYYY-MM-DD}}T{{time:HH:mm}}:00+08:00"
 tags:
-  - "#トワイライヴ"
-  - "#Youtube"
-  - "#Twitch"
+  - "#攝影"
 ---
-#### リンク
-[ ]()
 
-
-#### 感想
