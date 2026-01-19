@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "PCL_note",
+    pageTitle: "PCL",
     pageTitleSuffix: "",
     enableSPA: false,
     enablePopovers: true,
