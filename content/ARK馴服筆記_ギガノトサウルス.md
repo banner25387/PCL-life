@@ -43,5 +43,12 @@ tags:
 
 ## 容易失敗的地方
 
-- 關門那幾秒最危險。有人會先在陷阱裡放一隻 Diplodocus 擋住牠，多爭取幾秒。
+- 關門那幾秒最危險。可以先在陷阱裡放一隻 Diplodocus 擋住牠，多爭取幾秒。
 - 多人的話可以分工：一個人在高處射，其他人輪流拉仇恨，死了就在主機的位置重生再來。
+
+## 參考來源
+
+- 馴法與陷阱：ARK Wiki「Giganotosaurus」 https://ark.wiki.gg/wiki/Giganotosaurus
+- 馴法與陷阱：ARK Fandom「Giganotosaurus」 https://ark.fandom.com/wiki/Giganotosaurus
+- 仙境生成點：ark.wiki.gg「Ragnarok Ascended」的 ASA 生成資料，自行整理 https://ark.wiki.gg/wiki/Ragnarok_Ascended
+- 日文名：遊戲本體官方在地化檔

@@ -45,3 +45,9 @@ tags:
 ## 容易失敗的地方
 
 - **馴服途中只要牠受到任何傷害，馴服條歸零從頭來**。整個過程都在顧周圍安全，不是在顧牠。
+
+## 參考來源
+
+- 馴法與餌：神ゲー攻略「【ASA】アーケロンの生息地とテイム」 https://kamigame.jp/asa/page/339066644808611856.html
+- 仙境生成點：ark.wiki.gg「Ragnarok Ascended」的 ASA 生成資料，自行整理 https://ark.wiki.gg/wiki/Ragnarok_Ascended
+- 日文名：遊戲本體官方在地化檔

@@ -50,3 +50,11 @@ tags:
 ## 馴到之後
 
 能放一個「スピリットトーテム」給周圍生物加攻擊力，打得越多加越多，最高 25%。打 Boss 的時候帶著很實用。
+
+## 參考來源
+
+- 馴法、素材與成長段：神ゲー攻略「【ASA】エルダークローの生息地とテイム」 https://kamigame.jp/asa/page/382547611044831152.html
+- 馴法：ARK Wiki「Elderclaw」 https://ark.wiki.gg/wiki/Elderclaw
+- 仙境生成點：ark.wiki.gg「Ragnarok Ascended」的 ASA 生成資料，自行整理 https://ark.wiki.gg/wiki/Ragnarok_Ascended
+- 日文名：遊戲本體官方在地化檔
+- 溫室 300%、種子不可回收、失敗原因：自己在ロストコロニー的親測

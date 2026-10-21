@@ -51,3 +51,9 @@ tags:
 - 咆哮時牠會全回血。
 - 咆哮的時機大概是固定的，記住大約打幾發會吼，可以少失手。
 - 用陷阱把牠整個關住反而常常不咆哮，而且容易誤殺，所以才用ステゴ當沙包。
+
+## 參考來源
+
+- 馴法與餌：神ゲー攻略「【ASA】アクロカントサウルスの生息地とテイム」 https://kamigame.jp/asa/page/413700716545223987.html
+- 仙境生成點：ark.wiki.gg「Ragnarok Ascended」的 ASA 生成資料，自行整理 https://ark.wiki.gg/wiki/Ragnarok_Ascended
+- 日文名：遊戲本體官方在地化檔
