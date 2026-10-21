@@ -1,6 +1,7 @@
 ---
 title: "ARK 馴服筆記：プロコプトドン（Procoptodon）"
 date: "2026-10-21T00:00:00+08:00"
+ja: ja/ARK馴服筆記_プロコプトドン
 tags:
   - "#ARK"
   - "#馴服筆記"
