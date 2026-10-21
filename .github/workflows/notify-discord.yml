@@ -1,0 +1,84 @@
+# Blog 發布通知 → Discord #blog（AI 小秘書，2026-10-21 沛拍板方案 A）
+# 觸發：push 到 v4 且動到 content/。先等同一 commit 的「Deploy Quartz to GitHub Pages」跑完，
+# 部署成功才發；失敗也發一則 ⚠。訊息只含標題與網址（皆公開）。webhook 放 repo secret DISCORD_WEBHOOK_BLOG。
+name: Notify Discord on publish
+
+on:
+  push:
+    branches: ["v4"]
+    paths: ["content/**"]
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Wait for deploy of this commit
+        id: deploy
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for i in $(seq 1 40); do
+            row=$(gh run list --workflow deploy.yml --commit "$GITHUB_SHA" --json status,conclusion --jq '.[0] // empty')
+            status=$(echo "$row" | jq -r '.status // empty')
+            conclusion=$(echo "$row" | jq -r '.conclusion // empty')
+            if [ "$status" = "completed" ]; then
+              echo "conclusion=$conclusion" >> "$GITHUB_OUTPUT"; exit 0
+            fi
+            sleep 15
+          done
+          echo "conclusion=timeout" >> "$GITHUB_OUTPUT"
+
+      - name: Build and send message
+        env:
+          WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_BLOG }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          REPO: ${{ github.event.repository.name }}
+          OWNER: ${{ github.repository_owner }}
+          CONCLUSION: ${{ steps.deploy.outputs.conclusion }}
+        run: |
+          if [ -z "$WEBHOOK" ]; then echo "no DISCORD_WEBHOOK_BLOG secret, skip"; exit 0; fi
+          if echo "$BEFORE" | grep -qE '^0+$'; then BEFORE="$AFTER~1"; fi
+          git diff --name-status "$BEFORE" "$AFTER" -- content > /tmp/changes.txt || true
+          python3 - <<'PY'
+          import json, os, re, urllib.parse, urllib.request
+          repo, owner, concl = os.environ["REPO"], os.environ["OWNER"], os.environ["CONCLUSION"]
+          base = f"https://{owner.lower()}.github.io/{repo}/"
+          def slug(p):  # 與 quartz/util/path.ts sluggify 一致
+              segs = [re.sub(r"\s", "-", s).replace("&", "-and-").replace("%", "-percent").replace("?", "").replace("#", "")
+                      for s in p.split("/")]
+              return "/".join(segs)
+          new, upd, gone = [], [], []
+          for line in open("/tmp/changes.txt", encoding="utf-8"):
+              parts = line.rstrip("\n").split("\t")
+              if len(parts) < 2 or not parts[-1].endswith(".md"):
+                  continue
+              rel = parts[-1][len("content/"):-3]
+              title = rel.split("/")[-1]
+              ({"A": new, "M": upd, "D": gone}.get(parts[0][0], upd)).append((title, base + urllib.parse.quote(slug(rel))))
+          if not (new or upd or gone):
+              print("no content md changed"); raise SystemExit
+          head = "📣" if concl == "success" else "⚠"
+          lines = [f"{head} **{repo}** " + ("發布" if concl == "success" else f"push 了但部署 {concl}")]
+          for t, u in new:
+              lines += [f"新發布〈{t}〉", u]
+          for t, u in upd[:5]:
+              lines += [f"更新〈{t}〉", u]
+          if gone:
+              lines.append("下架：" + "、".join(f"〈{t}〉" for t, _ in gone))
+          if len(upd) > 5:
+              lines.append(f"（另更新 {len(upd) - 5} 篇）")
+          data = json.dumps({"content": "\n".join(lines)[:1900]}).encode()
+          req = urllib.request.Request(os.environ["WEBHOOK"], data=data,
+                                       headers={"Content-Type": "application/json", "User-Agent": "github-actions"})
+          with urllib.request.urlopen(req, timeout=15) as r:
+              print("discord", r.status)
+          PY
