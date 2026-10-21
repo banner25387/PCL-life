@@ -23,6 +23,7 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import LangToggle from "./LangToggle"
 
 export {
   ArticleTitle,
@@ -50,6 +51,7 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  LangToggle,
 }
 
 export { default as PostCalendar } from "./PostCalendar"

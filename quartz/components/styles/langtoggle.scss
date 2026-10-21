@@ -1,0 +1,27 @@
+// 雙語對照頁切換鍵：小藥丸文字鍵，與日夜切換／閱讀模式同列
+// 取色依 Blog設計權威檔 2.1（4期生色票）：天音かなた藍 #509BEA（與 Explorer 同色）
+.lang-toggle {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 20px;
+  line-height: 18px;
+  padding: 0 0.5rem;
+  border: 1px solid #509bea;
+  border-radius: 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #509bea !important;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.1s ease, color 0.1s ease;
+
+  &:hover {
+    background-color: #509bea;
+    color: var(--light) !important;
+  }
+}
+
+// 沒有對照頁時元件回傳 null，Flex 會留下一個空的包裹 div 與 1rem gap；把空項目藏掉
+.flex-component > div:empty {
+  display: none;
+}

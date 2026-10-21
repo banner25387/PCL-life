@@ -36,6 +36,8 @@ export const defaultContentPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
         { Component: Component.ReaderMode() },
+        // 雙語對照頁切換鍵（沛拍板 2026-10-21）：frontmatter 有 ja:/zh: 指向對照頁才顯示
+        { Component: Component.LangToggle() },
       ],
     }),
     Component.Explorer({
