@@ -11,7 +11,7 @@ tags:
 驗證備註: "fresh Opus agent 對照 kamigame 原文核過，驗收修正後"
 ---
 
-> 驗證：L1 來源核對｜2026-10-21｜fresh Opus agent 對照 kamigame 原文核過，驗收修正後
+> 驗證：L1 來源核對
 
 ## 生物簡介
 
