@@ -47,7 +47,8 @@ jobs:
         run: |
           if [ -z "$WEBHOOK" ]; then echo "no DISCORD_WEBHOOK_BLOG secret, skip"; exit 0; fi
           if echo "$BEFORE" | grep -qE '^0+$'; then BEFORE="$AFTER~1"; fi
-          git diff --name-status "$BEFORE" "$AFTER" -- content > /tmp/changes.txt || true
+          git -c core.quotepath=off diff --name-status "$BEFORE" "$AFTER" -- content > /tmp/changes.txt || true
+          echo "changes:"; cat /tmp/changes.txt
           python3 - <<'PY'
           import json, os, re, urllib.parse, urllib.request
           repo, owner, concl = os.environ["REPO"], os.environ["OWNER"], os.environ["CONCLUSION"]
