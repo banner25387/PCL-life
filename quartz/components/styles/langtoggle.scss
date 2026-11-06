@@ -1,27 +1,66 @@
-// 雙語對照頁切換鍵：小藥丸文字鍵，與日夜切換／閱讀模式同列
+@use "../../styles/variables.scss" as *;
+
+// 雙語對照頁切換鍵：分段式藥丸「中文｜日本語」，與日夜切換／閱讀模式同列
+// 形狀比照 ARK wiki site-switch：圓角膠囊、兩格等寬、當前格反白加粗、分隔線（2026-11-06）
 // 取色依 Blog設計權威檔 2.1（4期生色票）：天音かなた藍 #509BEA（與 Explorer 同色）
 .lang-toggle {
-  display: inline-block;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
-  height: 20px;
-  line-height: 18px;
-  padding: 0 0.5rem;
+  height: 22px;
   border: 1px solid #509bea;
-  border-radius: 10px;
+  border-radius: 999px;
+  overflow: hidden;
   font-size: 0.75rem;
-  font-weight: 600;
-  color: #509bea !important;
-  text-decoration: none;
+  line-height: 20px;
   white-space: nowrap;
-  transition: background-color 0.1s ease, color 0.1s ease;
+  flex-shrink: 0;
 
-  &:hover {
+  & > .lang-seg {
+    display: block;
+    padding: 0 0.4rem;
+    margin: 0;
+    text-align: center;
+    border-radius: 0;
+    background: none;
+    color: #509bea !important;
+    text-decoration: none;
+    transition:
+      background-color 0.1s ease,
+      color 0.1s ease;
+  }
+
+  & > .lang-seg + .lang-seg {
+    border-left: 1px solid #509bea;
+  }
+
+  & > a.lang-seg:hover {
+    background-color: rgba(80, 155, 234, 0.18);
+  }
+
+  // 當前語言：藍底深字加粗（深字在深淺兩模式對比都夠）
+  & > .lang-seg[aria-current] {
     background-color: #509bea;
-    color: var(--light) !important;
+    color: #0f2540 !important;
+    font-weight: 700;
+  }
+
+  // 手機版：左欄變成頂部橫列、空間窄，縮小字級與內距
+  @media all and ($mobile) {
+    font-size: 0.7rem;
+    & > .lang-seg {
+      padding: 0 0.3rem;
+    }
+  }
+
+  // 沒有對照版：灰掉、不可點
+  & > .lang-seg[aria-disabled="true"] {
+    color: var(--gray) !important;
+    cursor: not-allowed;
   }
 }
 
-// 沒有對照頁時元件回傳 null，Flex 會留下一個空的包裹 div 與 1rem gap；把空項目藏掉
+// 首頁等不渲染時元件回傳 null，Flex 會留下一個空的包裹 div 與 1rem gap；把空項目藏掉
 .flex-component > div:empty {
   display: none;
 }

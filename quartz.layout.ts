@@ -36,8 +36,8 @@ export const defaultContentPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
         { Component: Component.ReaderMode() },
-        // 雙語對照頁切換鍵（沛拍板 2026-10-21）：frontmatter 有 ja:/zh: 指向對照頁才顯示
-        { Component: Component.LangToggle() },
+        // 雙語對照頁切換鍵（沛拍板 2026-10-21；2026-11-06 改分段式、每篇文章都顯示，沒對照版的格灰掉；首頁不顯示）
+        { Component: Component.LangToggle(), shrink: false },
       ],
     }),
     Component.Explorer({
