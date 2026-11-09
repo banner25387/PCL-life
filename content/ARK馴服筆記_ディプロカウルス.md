@@ -59,10 +59,21 @@ tags:
 - 對三葉蟲有特攻，打得很快。
 - 戰鬥力低，看到攻擊型生物要逃。
 
+## 配點建議
+
+> 來源只給幾種用途各該點哪幾項，點法排序為推論。
+
+1. 氧氣：騎著時補給玩家的氧氣，量取決於牠自己的氧氣值。要潛得久、撿原油珍珠撿得久，就點這項。
+2. 負重：撿原油、珍珠和運東西都靠牠背，有給配點的用途都列負重。
+3. 近戰攻擊：專門拿來打三葉蟲時才點。
+- 不用點：體力。來源各用途都沒列；牠本來就打不過攻擊型生物，遇到要逃，不靠硬撐（推論）。
+
 ## 參考來源
 
 - 馴法、步驟、餌的順序、抓取與陷阱、馴到後性能：神ゲー攻略「【ASA】ディプロカウルス変種の生息地とテイム｜性能解説」 https://kamigame.jp/asa/page/332954610849342232.html
 - 簡易キブル配方與卵的種類（ASA）：神ゲー攻略「【ASA】キブルとは？｜各生物の好物キブル一覧」 https://kamigame.jp/asa/page/289470323143754478.html
 - 外觀、個性、首選餌、不需鞍具：ARK Wiki「Diplocaulus」 https://ark.wiki.gg/wiki/Diplocaulus
 - 仙境生成點：ark.wiki.gg「Ragnarok Ascended」的 ASA 生成資料，自行整理 https://ark.wiki.gg/wiki/Ragnarok_Ascended
+- 配點建議（各用途該點的項目）：ARK Wiki「Diplocaulus」 https://ark.wiki.gg/wiki/Diplocaulus （Roles 段）
+- 配點建議（補給玩家的氧氣量取決於牠的氧氣值）：神ゲー攻略「【ASA】ディプロカウルス変種の生息地とテイム｜性能解説」 https://kamigame.jp/asa/page/332954610849342232.html （性能解説段）
 - 日文名：遊戲本體官方在地化檔

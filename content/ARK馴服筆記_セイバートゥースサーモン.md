@@ -72,6 +72,14 @@ ASA 版的詳細流程是否與舊版（ASE）完全相同：未確認。
 - 死體用鎌剝取能拿到大トロ，量比用鎬或斧多很多。
 - 用釣魚抓到時，可能掉黑真珠或設計圖。
 
+## 配點建議
+
+> 來源未寫加點建議，以下依用途推論。馴到的這隻能升級但不能騎，大トロ和釣魚掉落都是野生個體的用法。
+
+1. 體力：當寵物養或跟在旁邊打架，先活下來才有用（推論）。
+2. 近戰攻擊：咬到會讓對方持續掉耐力和酸素，能拖慢逃跑的敵人；這個效果會不會跟著近戰攻擊變強：未確認。
+- 不用點：重量。牠不能騎，來源也沒寫能幫你載東西（推論）。
+
 ## 參考來源
 
 - 魚籠捕獲、外觀、群體攻擊、不吃餵食槽：ARK Wiki「Sabertooth Salmon」 https://ark.wiki.gg/wiki/Sabertooth_Salmon
@@ -80,4 +88,5 @@ ASA 版的詳細流程是否與舊版（ASE）完全相同：未確認。
 - ASA 的馴服方式標示（魚籠）、大トロ與釣魚掉落：神ゲー攻略「【ASA】セイバートゥースサーモン変種の生息地とテイム｜性能解説」 https://kamigame.jp/asa/page/332954611537191121.html
 - ASA 生物馴服方式總表（セイバートゥースサーモン＝特殊・魚籠テイム）：神ゲー攻略「【ASA】恐竜/生物評価とテイム方法一覧」 https://kamigame.jp/asa/page/288347621225974405.html
 - 仙境生成點：ark.wiki.gg「Ragnarok Ascended」的 ASA 生成資料，自行整理 https://ark.wiki.gg/wiki/Ragnarok_Ascended
+- 配點建議的可升級、不能騎、咬擊讓對方掉耐力與酸素、護衛用途：ARK Wiki「Sabertooth Salmon」的 Taming、Roles 與 Bite 段 https://ark.wiki.gg/wiki/Sabertooth_Salmon
 - 日文名：遊戲本體官方在地化檔

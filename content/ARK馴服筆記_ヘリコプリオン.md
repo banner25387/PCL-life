@@ -53,8 +53,17 @@ tags:
 - 改過按鍵配置的人要先確認實際對應的鍵。
 - 只要不主動攻擊，靠很近也不會敵對。
 
+## 配點建議
+
+> 來源只寫設計圖化成功率可以靠升級加點提高、建議全點這項，點法排序為推論。
+
+1. 設計圖化成功率（製作技能，Crafting Skill）：成功率就是這項，失敗會連原本的道具一起失去。每點加的量很少，所以挑野生時這項就高的個體比靠升級補更重要。成功率有上限。
+- 不用點：其他項（只拿來轉設計圖的話）。來源建議升級點數全放成功率。轉換花的時間，來源寫的是看道具種類和品質；跟 stat 有沒有關係：未確認。
+
 ## 參考來源
 
 - 馴法、專用餌與道具條件：神ゲー攻略「【ASA】ヘリコプリオンの生息地とテイム」 https://kamigame.jp/asa/page/382390087649902745.html
 - 仙境生成點：ark.wiki.gg「Ragnarok Ascended」的 ASA 生成資料，自行整理 https://ark.wiki.gg/wiki/Ragnarok_Ascended
+- 配點建議的成功率靠加點提高、每點加得少宜挑高成功率個體、轉換時間看道具種類與品質：神ゲー攻略「【ASA】ヘリコプリオンの生息地とテイム｜性能解説」的性能解説段 https://kamigame.jp/asa/page/382390087649902745.html
+- 配點建議的成功率對應 Crafting Skill、全點成功率、成功率上限：ARK Wiki「Helicoprion」的 Passive 與 Utility 段 https://ark.wiki.gg/wiki/Helicoprion
 - 日文名：遊戲本體官方在地化檔

@@ -58,9 +58,19 @@ tags:
 - 能存水，最多 750，可以拿來喝或灌溉。在水邊或建在水脈上的井附近補水。
 - 能採莓果，負重也夠，前期當搬運很好用。
 
+## 配點建議
+
+> 來源未寫加點建議，以下依用途推論。
+
+1. 重量：採莓果、採稻草和木材、當搬運都是把東西裝在牠身上，能裝多少看負重（推論）。
+2. 耐力：長途搬運要一直跑，跑步會耗耐力（推論）。
+- 存水量：能不能靠加點變多，未確認。
+- 不用點：近戰攻擊。作業用途不靠牠打架（推論）。
+
 ## 參考來源
 
 - 馴法、餌、鞍具等級、存水量：神ゲー攻略「【ASA】モレラトプスの生息地とテイム」 https://kamigame.jp/asa/page/317790806293388960.html
 - 外觀、來源擴充：ARK Wiki「Morellatops」 https://ark.wiki.gg/wiki/Morellatops
 - 仙境生成點：ark.wiki.gg「Ragnarok Ascended」的 ASA 生成資料，自行整理 https://ark.wiki.gg/wiki/Ragnarok_Ascended
+- 配點建議的負重用途（搬運、採莓、採稻草與木材）、存水上限：ARK Wiki「Morellatops」的 Roles 與 Base Stats 段 https://ark.wiki.gg/wiki/Morellatops
 - 日文名：遊戲本體官方在地化檔
